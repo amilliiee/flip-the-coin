@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background-color: #404A65;
+    --button-color: #1F6FB0;
+    --button-shadow: #23649B;
+    --text-white: #ECEDF0;
+    --text-black: #35383F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Kanit, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    margin: 2.5rem 0 3.75rem;
+}
+
+.outlined-text {
+    position: relative;
+    display: inline-block;
+    color: var(--text-white);
+    font-weight: bold;
+    font-size: 4rem;
+    z-index: 1;
+    letter-spacing: -0.01rem;
+}
+
+.outlined-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: var(--text-white);
+    -webkit-text-stroke: 10px var(--text-black);
+    pointer-events: none;
+}
+
+#text-stroke, #text-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#instructions {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-white);
+}
+
+.coin-div {
+    margin-bottom: 3.75rem;
+}
+
+.coin, .shadow {
+    margin-bottom: 2.5rem;
+}
+
+.coin {
+    width: 10rem;
+    height: 10rem;
+}
+
+#result {
+    color: var(--text-white);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+}
+
+#coin-btn {
+    background-color: transparent;
+    border: none;
+}
+
+#flip-btn {
+    width: 10.125rem;
+    height: 2.875rem;
+    color: var(--text-white);
+    background-color: var(--button-color);
+    border-color: transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px var(--button-shadow);
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 40px;
+}

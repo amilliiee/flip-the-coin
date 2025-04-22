@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Flip the coin | devChallenges.io</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title-wrapper">
+          <span class="outlined-text" data-text="Flip the coin">Flip the coin</span>
+        </div>
+        <p id="instructions">Press the coin or the button to flip the coin</p>
+      </div>
+      <div class="coin-div">
+        <div class="coin">
+          <button id="coin-btn">
+            <img src="./resources/heads.svg" id="coin">
+          </button>
+        </div>
+        <div class="shadow">
+          <img src="./resources/shadow.svg" id="shadow">
+        </div>
+        <p id="result">Heads</p>
+      </div>
+      <button id="flip-btn">Random</button>
+    </div>
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
